@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class AulaTernario {
     public static void main(String[] args) {
+        // Ternários em Java:
         // variável = (condição) ? verdadeiro : falso
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
