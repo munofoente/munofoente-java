@@ -2,6 +2,11 @@ package exercicios.sequencial;
 
 import java.util.Scanner;
 
+/*
+    8 - Faça um algoritmo que leia três
+    valores inteiros diferentes e imprima na tela os valores em ordem decrescente.
+ */
+
 public class Ex08 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -23,7 +28,7 @@ public class Ex08 {
             }
         }
 
-        i++;
+
         for(i = 0; i < array.length; i++){
             System.out.print(array[i] + " ");
         }

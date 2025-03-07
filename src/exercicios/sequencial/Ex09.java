@@ -1,6 +1,11 @@
 package exercicios.sequencial;
 import java.util.Scanner;
 
+/*
+    9 - Faça um algoritmo que calcule o IMC (Índice de Massa Corporal) de uma pessoa,
+    leia o seu peso e sua altura e imprima na tela sua condição
+ */
+
 public class Ex09 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

@@ -1,6 +1,12 @@
 package exercicios.sequencial;
 import java.util.Scanner;
 
+/*
+    12 - Faça um algoritmo que leia o valor de um produto e determine o valor que deve ser pago,
+    conforme a escolha da forma de pagamento
+    pelo comprador e imprima na tela o valor final do produto a ser pago.
+ */
+
 public class Ex12 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
