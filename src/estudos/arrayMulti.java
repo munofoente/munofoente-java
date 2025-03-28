@@ -6,8 +6,13 @@ public class arrayMulti {
         int[][] multiArray = new int[2][5];
 
         for(int i = 0; i < multiArray.length; i++){
-            for(int j = 0; j < multiArray[i].length;j++){
-                System.out.println("i:" + i + " j:" + j);
+            if(i > 0){
+                System.out.println("Segundo array: ");
+            } else{
+                System.out.println("Primeiro array: ");
+            }
+            for(int j = 0; j < multiArray[i].length; j++){
+                System.out.println(j);
             }
         }
     }
