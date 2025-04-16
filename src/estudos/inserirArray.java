@@ -4,10 +4,10 @@ import java.util.Arrays;
 
 public class inserirArray {
     public static void main(String[] args) {
-        int[] ints = new int[20];
+        int[] ints = new int[10];
 
         int insertIndex = 0;
-        int newValue = 123;
+        int newValue = 12;
 
         for(int i = ints.length - 1; i > insertIndex; i--){
             ints[i] = ints[i-1];
