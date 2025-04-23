@@ -29,8 +29,15 @@ public class arrayMulti {
 
         //foreach com array multidimensional
         for (int[] arrBase : arr){
+            int i = 0;
+            if (arrBase[i] > 2){
+                System.out.println("Segundo array: ");
+            } else {
+                System.out.println("Primeiro array: ");
+            }
             for (int num : arrBase){
                 System.out.println(num);
+                i++;
             }
         }
     }
