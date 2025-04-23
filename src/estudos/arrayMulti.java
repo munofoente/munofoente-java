@@ -3,7 +3,7 @@ package estudos;
 public class arrayMulti {
     public static void main(String[] args) {
         //criação de um array multidimensional - este é um array de duas dimensões
-        int[][] multiArray = new int[2][5];
+        int[][] multiArray = new int[2][6];
 
         for(int i = 0; i < multiArray.length; i++){
             if(i > 0){
@@ -13,6 +13,24 @@ public class arrayMulti {
             }
             for(int j = 0; j < multiArray[i].length; j++){
                 System.out.println(j);
+            }
+        }
+        System.out.println("------------");
+
+        int[][] arr = new int[2][3];
+
+        arr[0][0] = 1;
+        arr[0][1] = 2;
+        arr[0][2] = 3;
+
+        arr[1][0] = 3;
+        arr[1][1] = 2;
+        arr[1][2] = 1;
+
+        //foreach com array multidimensional
+        for (int[] arrBase : arr){
+            for (int num : arrBase){
+                System.out.println(num);
             }
         }
     }
