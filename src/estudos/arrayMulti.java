@@ -12,8 +12,9 @@ public class arrayMulti {
                 System.out.println("Primeiro array: ");
             }
             for(int j = 0; j < multiArray[i].length; j++){
-                System.out.println(j);
+                System.out.print(j);
             }
+            System.out.println();
         }
         System.out.println("------------");
 
@@ -36,9 +37,10 @@ public class arrayMulti {
                 System.out.println("Primeiro array: ");
             }
             for (int num : arrBase){
-                System.out.println(num);
+                System.out.print(num);
                 i++;
             }
+            System.out.println();
         }
     }
 }
