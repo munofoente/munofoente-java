@@ -22,3 +22,8 @@ No caso de novos tópicos de estudo surgirem, eu irei atualizar a lista.<br>
 - Condicionais;
 - Loops;
 - Arrays;
+
+## Orientação a Objetos
+
+- Classes;
+- Métodos;
