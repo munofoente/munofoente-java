@@ -1,14 +1,13 @@
 package estudos.orientacaoobjetos.calculadora.entities;
 
 public class Calculator {
-    public long result;
 
-    public void Sum(long a, long b){
-        result = a + b;
+    public static long Sum(long a, long b){
+        return a + b;
     }
 
-    public void Sub(long a, long b){
-        result = a - b;
+    public static long Sub(long a, long b){
+        return a - b;
     }
 }
 

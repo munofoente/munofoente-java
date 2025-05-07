@@ -2,6 +2,7 @@ package estudos.orientacaoobjetos.calculadora.application;
 
 import estudos.orientacaoobjetos.calculadora.entities.Calculator;
 
+import java.net.CacheRequest;
 import java.util.Scanner;
 
 
@@ -32,14 +33,12 @@ public class Program {
 
         switch (op){
             case '+':
-                calc.Sum(a, b);
-                result = calc.result;
+                result = Calculator.Sum(a, b);
                 System.out.println("=");
                 System.out.println(result);
                 break;
             case '-':
-                calc.Sub(a, b);
-                result = calc.result;
+                result = Calculator.Sub(a, b);;
                 System.out.println("=");
                 System.out.println(result);
                 break;
