@@ -2,14 +2,13 @@ package estudos.orientacaoobjetos.calculadora.application;
 
 import estudos.orientacaoobjetos.calculadora.entities.Calculator;
 
-import java.net.CacheRequest;
+
 import java.util.Scanner;
 
 
 public class Program {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Calculator calc = new Calculator();
 
         long a, b, result;
         char op;
@@ -38,7 +37,7 @@ public class Program {
                 System.out.println(result);
                 break;
             case '-':
-                result = Calculator.Sub(a, b);;
+                result = Calculator.Sub(a, b);
                 System.out.println("=");
                 System.out.println(result);
                 break;
