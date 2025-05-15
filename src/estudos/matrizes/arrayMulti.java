@@ -1,4 +1,4 @@
-package estudos;
+package estudos.matrizes;
 
 public class arrayMulti {
     public static void main(String[] args) {
