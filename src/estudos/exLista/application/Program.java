@@ -19,7 +19,11 @@ public class Program {
         for (int i = 0; i < quant ; i++) {
             System.out.println("Funcionário #"+ (i+1) );
             System.out.print("ID: ");
-            Integer id = sc.nextInt();
+            int id = sc.nextInt();
+            while(checaId(lista,id)){
+                System.out.println("ID já foi cadastrado! Tente denovo.");
+                id = sc.nextInt();
+            }
             System.out.print("Nome: ");
             String nome = sc.next();
             sc.nextLine();
@@ -65,5 +69,11 @@ public class Program {
         }
         //caso o loop for não retorne nada, a função retorna nulo
         return null;
+    }
+
+    //função que verifica se o ID a ser inserido já foi cadastrado
+    public static boolean checaId(List<Funcionario> list, int id){
+        Funcionario f = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
+        return f != null;
     }
 }
