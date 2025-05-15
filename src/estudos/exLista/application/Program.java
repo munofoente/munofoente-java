@@ -33,6 +33,9 @@ public class Program {
         System.out.print("Insira o ID do funcionário que receberá aumento: ");
         int idAumento = sc.nextInt();
 
+        //Outra forma de resolver o exercício é com esta expressão lambda:
+        //Funcionario f = lista.stream().filter(x -> x.getId() == idAumento).findAny().orElse(null);
+
         //aqui é criada uma variável posicao para receber a função
         Integer posicao = posicao(lista, idAumento);
         if (posicao == null){
@@ -44,6 +47,7 @@ public class Program {
         }
 
         System.out.println();
+
         System.out.println("Lista de funcionários: ");
         for(Funcionario x : lista){
             System.out.println(x);
