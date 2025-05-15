@@ -11,10 +11,10 @@ public class Program {
 
         System.out.print("Quantos funcionários serão registrados? ");
 
-        Funcionario funcionario = new Funcionario();
+
         int quant = sc.nextInt();
         //o tipo da lista é definido como Funcionario(generics)
-        List <Funcionario> lista = new ArrayList<>(quant);
+        List <Funcionario> lista = new ArrayList<>();
 
         for (int i = 0; i < quant ; i++) {
             System.out.println("Funcionário #"+ (i+1) );
@@ -26,7 +26,7 @@ public class Program {
             System.out.print("Salário: ");
             Double salario = sc.nextDouble();
             System.out.println();
-            funcionario = new Funcionario(id, nome, salario);
+            Funcionario funcionario = new Funcionario(id, nome, salario);
             lista.add(funcionario);
         }
 
