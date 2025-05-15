@@ -13,6 +13,7 @@ public class Program {
 
         Funcionario funcionario = new Funcionario();
         int quant = sc.nextInt();
+        //o tipo da lista é definido como Funcionario(generics)
         List <Funcionario> lista = new ArrayList<>(quant);
 
         for (int i = 0; i < quant ; i++) {
