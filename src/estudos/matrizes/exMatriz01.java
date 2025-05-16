@@ -17,10 +17,30 @@ public class exMatriz01 {
         }
 
         for (int i = 0; i < n; i++) {
+            System.out.println();
             for (int j = 0; j < n; j++) {
-
+                System.out.print(matriz[i][j] + " ");
             }
         }
+
+        System.out.println();
+
+        System.out.println("Diagonal Principal: ");
+        for (int i = 0; i < n; i++) {
+            System.out.print(matriz[i][i]+ " ");
+        }
+
+        System.out.println();
+
+        System.out.println("Números Negativos");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (matriz[i][j] < 0){
+                    System.out.print(matriz[i][j]+ " ");
+                }
+            }
+        }
+
 
         sc.close();
     }
