@@ -33,13 +33,15 @@ public class exMatriz01 {
         System.out.println();
 
         System.out.println("Números Negativos");
+        int negativos = 0;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 if (matriz[i][j] < 0){
-                    System.out.print(matriz[i][j]+ " ");
+                    negativos++;
                 }
             }
         }
+        System.out.println(negativos);
 
 
         sc.close();
