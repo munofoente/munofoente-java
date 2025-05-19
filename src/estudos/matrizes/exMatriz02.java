@@ -10,29 +10,29 @@ public class exMatriz02 {
         int n = sc.nextInt();
         int[][] matrix = new int[m][n];
 
-        for (int i = 0; i < matrix.length ; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                matrix[i][j] = sc.nextInt();
+        for (int rows = 0; rows < matrix.length ; rows++) {
+            for (int columns = 0; columns < matrix[rows].length; columns++) {
+                matrix[rows][columns] = sc.nextInt();
             }
         }
 
         int x = sc.nextInt();
 
-        for (int i = 0; i < matrix.length ; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                if(matrix[i][j] == x){
-                    System.out.println("Position: "+ i + ", " + j);
-                    if (matrix[i][j-1] != 0){
-                        System.out.println("Left: " + matrix[i][j-1]);
+        for (int rows = 0; rows < matrix.length ; rows++) {
+            for (int columns = 0; columns < matrix[rows].length; columns++) {
+                if(matrix[rows][columns] == x){
+                    System.out.println("Position: "+ rows + ", " + columns);
+                    if (columns > 0){
+                        System.out.println("Left: "+ matrix[rows][columns-1]);
                     }
-                    if (matrix[i][j+1] != 0){
-                        System.out.println("Right: "+ matrix[i][j+1]);
+                    if (rows > 0){
+                        System.out.println("Up: "+ matrix[rows-1][columns]);
                     }
-                    if (matrix[i-1][j] != 0){
-                        System.out.println("Up: " + matrix[i-1][j]);
+                    if (columns < matrix[rows].length-1){
+                        System.out.println("Right: "+ matrix[rows][columns+1]);
                     }
-                    if (matrix[i+1][j] != 0){
-                        System.out.println("Down: "+ matrix[i+1][j]);
+                    if (rows < matrix.length-1){
+                        System.out.println("Down: "+ matrix[rows+1][columns]);
                     }
 
                 }
