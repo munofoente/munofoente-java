@@ -7,31 +7,26 @@ public class Program {
         Scanner sc = new Scanner(System.in);
 
         int cargaInicial = 50;
-        int soma = 0;
         int n = sc.nextInt();
 
         int[] eventos = new int[n];
 
         for (int i = 0; i < eventos.length; i++) {
             eventos[i] = sc.nextInt();
-            if (i == 0){
-                soma = eventos[0] + cargaInicial;
+        }
+
+        for (int evento : eventos) {
+            cargaInicial += evento;
+
+            if (cargaInicial > 100){
+                cargaInicial = 100;
+            } else if (cargaInicial < 0) {
+                cargaInicial = 0;
             }
         }
 
-
-        System.out.println(getBattery(eventos, soma));
+        System.out.println(cargaInicial);
 
         sc.close();
-    }
-
-    public static int getBattery(int[] eventos, int soma){
-        for (int i = 1; i < eventos.length; i++) {
-            soma += eventos[i];
-            if (soma > 100){
-                soma = 100;
-            }
-        }
-        return soma;
     }
 }
