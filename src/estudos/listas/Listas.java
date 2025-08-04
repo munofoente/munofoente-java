@@ -1,6 +1,7 @@
 package estudos.listas;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 public class Listas {
@@ -42,7 +43,7 @@ public class Listas {
         System.out.print("Índice de Judas: "+ list.indexOf("Judas")+ "\n");
         System.out.println("-----------------------");
         //exibir somente os elementos que começam com a letra M
-        List <String> result = list.stream().filter(x -> x.charAt(0) == 'M').toList();
+        List <String> result = list.stream().filter(x -> x.charAt(0) == 'M').collect(Collectors.toList());
 
         System.out.println(result);
 
