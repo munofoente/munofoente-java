@@ -1,0 +1,8 @@
+package estudos.classesabstratas.ex01.entities.enums;
+
+public enum Color {
+
+    BLACK,
+    BLUE,
+    RED;
+}
