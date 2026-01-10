@@ -5,7 +5,6 @@ public class Individual extends TaxPayer{
     private Double healthCare;
 
     public Individual(){
-
     }
 
     public Individual(String name, Double income, Double healthCare) {
