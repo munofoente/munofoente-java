@@ -1,12 +1,14 @@
 package estudos.interfaces.exServiçoPagamento.model.entities;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 public class Contract {
     private Integer number;
     private Date date;
     private Double totalValue;
-    private Installment installment;
+    private List<Installment> installments = new ArrayList<>();
 
     public Contract(){
 
@@ -42,11 +44,7 @@ public class Contract {
         this.totalValue = totalValue;
     }
 
-    public Installment getInstallment() {
-        return installment;
-    }
-
-    public void setInstallment(Installment installment) {
-        this.installment = installment;
+    public List<Installment> getInstallments(){
+        return installments;
     }
 }

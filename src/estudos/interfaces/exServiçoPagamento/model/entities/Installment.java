@@ -7,7 +7,7 @@ public class Installment {
     private Date dueDate;
     private Double amount;
 
-    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+    private static final SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
     public Installment(){
 
